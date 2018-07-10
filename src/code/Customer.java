@@ -1,8 +1,8 @@
 package code;
 
+import java.io.Serializable;
 
-
-public class Customer {
+public class Customer implements Serializable{
 	
 
 	private String firstName;
@@ -64,7 +64,7 @@ public class Customer {
 
 
 	public String toString() {
-		return "Customer [\nfirstName= " + firstName + "\nlastName= " + lastName + "\naddress= " + address + "\nage= " + age
-				+ "\nssn= " + ssn;
+		return firstName + "," + lastName + "," + address + "," + age
+				+ "," + ssn;
 		}
 }
