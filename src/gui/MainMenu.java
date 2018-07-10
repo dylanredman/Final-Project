@@ -343,12 +343,12 @@ public class MainMenu extends JFrame{
 					
 					if(choice.equals("Savings") && amount > 0) {
 						bankAccount.setSavings(bankAccount.getSavings() + amount);
-						depositTxtArea.setText("Deposit Successful!\n");
+						depositTxtArea.append("Deposit Successful!\n");
 						savingsTxtFld.setText("$" + df.format(bankAccount.getSavings()));
 					}
 					else if(choice.equals("Checking") && amount > 0) {
 						bankAccount.setChecking(bankAccount.getChecking() + amount);
-						depositTxtArea.setText("Deposit Successful!\n");
+						depositTxtArea.append("Deposit Successful!\n");
 						checkingTxtFld.setText("$" + df.format(bankAccount.getChecking()));
 					}
 					else if(choice.equals("")) {
@@ -372,12 +372,12 @@ public class MainMenu extends JFrame{
 					
 					if(choice.equals("Savings") && amount > 0 && amount <= bankAccount.getSavings()) {
 						bankAccount.setSavings(bankAccount.getSavings() - amount);
-						withdrawTxtArea.setText("Withdraw Successful!\n");
+						withdrawTxtArea.append("Withdraw Successful!\n");
 						savingsTxtFld.setText("$" + df.format(bankAccount.getSavings()));
 					}
 					else if(choice.equals("Checking") && amount > 0 && amount <= bankAccount.getChecking()) {
 						bankAccount.setChecking(bankAccount.getChecking() - amount);
-						withdrawTxtArea.setText("Withdraw Successful!\n");
+						withdrawTxtArea.append("Withdraw Successful!\n");
 						checkingTxtFld.setText("$" + df.format(bankAccount.getChecking()));
 					}
 					else if(choice.equals("")) {

@@ -1,9 +1,8 @@
 package code;
+;
 
-import java.io.Serializable;
 
-
-public class BankAccount implements Serializable{
+public class BankAccount {
 
 	private double checking;
 	private double savings;
