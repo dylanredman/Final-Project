@@ -574,7 +574,7 @@ public class MainMenu extends JFrame{
 			lblTransferAmount.setFont(new Font("Tahoma", Font.BOLD, 20));
 			lblTransferingFrom.setFont(new Font("Tahoma", Font.BOLD, 25));
 			lblTransferingTo.setFont(new Font("Tahoma", Font.BOLD, 25));
-			transferTxtArea.setFont(new Font("Tahoma", Font.PLAIN, 16));
+			transferTxtArea.setFont(new Font("Tahoma", Font.PLAIN, 15));
 			transferTxtArea.setEditable(false);
 			transferTxtArea.setBackground(new Color(255, 255, 255));
 			
